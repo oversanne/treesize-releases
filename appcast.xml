@@ -4,6 +4,14 @@
         <title>TreeSize</title>
         <item>
             <title>1.0</title>
+            <pubDate>Tue, 26 May 2026 17:50:09 +0200</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://treesize.delcedo.com/treesize-releases/TreeSize_v1.0_b7.zip" length="2868787" type="application/octet-stream" sparkle:edSignature="k+VWaF5J44dqwzaKADkJJC9CPG93NzOKvyhnZox/Zr5GX90wwWR/TLRhBUD5aB6srh9mMHikzfOoPBeT1wrLCQ=="/>
+        </item>
+        <item>
+            <title>1.0</title>
             <pubDate>Tue, 26 May 2026 17:34:52 +0200</pubDate>
             <sparkle:version>6</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
@@ -17,14 +25,6 @@
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <enclosure url="https://treesize.delcedo.com/treesize-releases/TreeSize_v1.0_b5.zip" length="2858744" type="application/octet-stream" sparkle:edSignature="eL3rpxcMsx0qq6e7zjA0LVg4K1IpXN4H/bjL4fDSJFZsoHrpbCN5BwzganJdu1wl4WyNImhdK5ZVt4a3OPp4Bw=="/>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Tue, 26 May 2026 17:26:36 +0200</pubDate>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://treesize.delcedo.com/treesize-releases/TreeSize_v1.0_b4.zip" length="2858737" type="application/octet-stream" sparkle:edSignature="J9iGDAeDIBRJlt+Ui3JSd/eDpstiQXH2f8Z8iHpUW35CYqHfZ+3W8aWyKFcAA6wvCE0gL1bMeyKmdb9AEYXMBg=="/>
         </item>
     </channel>
 </rss>
