@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>TreeSize</title>
+        <item>
+            <title>1.0</title>
+            <pubDate>Tue, 26 May 2026 17:23:16 +0200</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://treesize.delcedo.com/treesize-releases/TreeSize_v1.0_b3.zip" length="2858776" type="application/octet-stream" sparkle:edSignature="u9F0t1D5+t2aj98n2/T2XLo3l95HBvXzuO0F4OEAmRMregN7NKtR/3kG1TORDf9h4NSBBxVFE6nNDt/fLM/MAQ=="/>
+        </item>
+    </channel>
+</rss>
