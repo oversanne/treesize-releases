@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreeSize for macOS — Interactive Disk Space Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Premium background glowing lights -->
+    <div class="glow-bg">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo" style="display: flex; align-items: center;">
+                <img src="app_icon.png" alt="TreeSize Logo" style="width: 32px; height: 32px; border-radius: 7px; margin-right: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+                <span class="logo-text">TreeSize</span>
+            </div>
+            <a href="https://github.com/oversanne/treesize-releases" class="github-link" target="_blank">
+                <svg class="github-icon" viewBox="0 0 16 16" width="20" height="20">
+                    <path fill="currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="badge">100% Native macOS App</span>
+                <h1>Visualize your disk space in <span class="gradient-text">beautiful blocks</span>.</h1>
+                <p class="hero-desc">TreeSize analyzes your directories instantly and generates interactive, squarified treemaps. Find massive files, clean up storage, and speed up your Mac.</p>
+                
+                <div class="cta-actions">
+                    <a href="TreeSize.zip" class="btn btn-primary" id="download-btn">
+                        <span class="download-icon">⬇</span>
+                        <div class="btn-text">
+                            <span class="btn-title">Download for macOS</span>
+                            <span class="btn-subtitle">Free & Fully Signed</span>
+                        </div>
+                    </a>
+                    <a href="#cli" class="btn btn-secondary">
+                        <span class="terminal-icon">$_</span>
+                        <span>Terminal Integration</span>
+                    </a>
+                </div>
+                
+                <div class="quick-stats">
+                    <span>⚡ Parallel APFS Scanning</span>
+                    <span class="separator">•</span>
+                    <span>🔒 Secured Sandbox Trashing</span>
+                    <span class="separator">•</span>
+                    <span>🍃 Just 8 MB</span>
+                </div>
+            </div>
+
+            <!-- Interactive Mockup Display -->
+            <div class="hero-preview">
+                <div class="app-window">
+                    <div class="window-titlebar">
+                        <div class="traffic-lights">
+                            <span class="light red"></span>
+                            <span class="light yellow"></span>
+                            <span class="light green"></span>
+                        </div>
+                        <div class="window-path">~ / Projects / treesize</div>
+                    </div>
+                    <div class="app-layout-mock">
+                        <div class="treemap-mock">
+                            <div class="tile-mock media" style="grid-area: 1 / 1 / 3 / 3;">
+                                <span>movies/</span>
+                                <span class="size">45.2 GB</span>
+                            </div>
+                            <div class="tile-mock code" style="grid-area: 1 / 3 / 2 / 5;">
+                                <span>node_modules/</span>
+                                <span class="size">12.4 GB</span>
+                            </div>
+                            <div class="tile-mock image" style="grid-area: 2 / 3 / 3 / 4;">
+                                <span>photos/</span>
+                                <span class="size">8.1 GB</span>
+                            </div>
+                            <div class="tile-mock system" style="grid-area: 2 / 4 / 3 / 5;">
+                                <span>cache/</span>
+                                <span class="size">6.3 GB</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-mock">
+                            <img src="app_icon.png" alt="TreeSize Icon" style="width: 48px; height: 48px; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+                            <h3>treesize/</h3>
+                            <span class="category-badge">Directory</span>
+                            <div class="sidebar-info">
+                                <div class="info-row"><span>Size</span><strong>72.0 GB</strong></div>
+                                <div class="info-row"><span>Items</span><strong>28,490</strong></div>
+                            </div>
+                            <div class="sidebar-actions">
+                                <button class="action-btn open">Open Folder</button>
+                                <button class="action-btn reveal">Reveal in Finder</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <h2>Designed for speed and elegance</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box">⚡</div>
+                    <h3>APFS Parallel Scan</h3>
+                    <p>Built directly with Swift concurrency using TaskGroups to parallelize disk operations, achieving near-instant results on Apple Silicon SSDs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">🎛</div>
+                    <h3>Interactive Squarified Treemap</h3>
+                    <p>Visualizes your directories as proportional rectangles. Double-click to zoom in, select to reveal stats, and browse with fluid custom animations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">🗑</div>
+                    <h3>Safe Clean-up</h3>
+                    <p>Trash bulky folders and files securely from the sidebar interface, with native confirmation dialogs and immediate real-time treemap updates.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cli" class="cli-section">
+            <div class="cli-container">
+                <div class="cli-text">
+                    <h2>Launch from your Terminal</h2>
+                    <p>Integrate TreeSize perfectly into your development workflow. Type a single command followed by any folder path to launch the visualizer immediately.</p>
+                    <div class="terminal-box">
+                        <span class="prompt">$</span> <span class="command">treesize</span> <span class="argument">~/Downloads</span>
+                    </div>
+                    <p class="cli-note">During local installation, a symlink is automatically generated in <code>/usr/local/bin/treesize</code> to provide instant command-line utility.</p>
+                </div>
+                <div class="cli-code-preview">
+                    <pre><code><span class="comment"># Analyze your current working directory</span>
+treesize .
+
+<span class="comment"># Audit heavy developer directories</span>
+treesize ~/Library/Developer/Xcode/DerivedData</code></pre>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 TreeSize. Developed natively for macOS. No Node, no Electron, all Swift.</p>
+        </div>
+    </footer>
+</body>
+</html>
